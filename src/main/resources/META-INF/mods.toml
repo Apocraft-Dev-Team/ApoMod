@@ -27,7 +27,7 @@ displayName="§4§lApo Mod" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://apocraft.com/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="apomod_logo.png" #optional
 # A text field displayed in the mod UI
 credits="§lMod made by the §o\"Apocraft Dev Team (ADT)\"§r§l for the §4§lApocraft§r§l Roleplay server." #optional
 # A text field displayed in the mod UI

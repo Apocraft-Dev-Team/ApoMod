@@ -2,6 +2,7 @@ package com.apocraft.apomod;
 
 import com.apocraft.apomod.item.ModItems;
 import com.apocraft.apomod.world.biome.ModBiomes;
+import com.apocraft.apomod.world.gen.ModBiomeGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,6 +57,12 @@ public class ApoMod
         // some preinit code
         LOGGER.info("Pre-Initializing ApoMod...");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
+        event.enqueueWork(() -> {
+
+            // GENERATE BIOMES FOR WORLD CREATION
+            ModBiomeGeneration.generateBiomes();
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
