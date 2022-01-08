@@ -1,6 +1,7 @@
 package com.apocraft.apomod;
 
 import com.apocraft.apomod.item.ModItems;
+import com.apocraft.apomod.world.biome.ModBiomes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +36,7 @@ public class ApoMod
 
 
         ModItems.register(eventBus);
+        ModBiomes.register(eventBus);
 
 
         eventBus.addListener(this::setup);
@@ -52,7 +54,7 @@ public class ApoMod
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+        LOGGER.info("Pre-Initializing ApoMod...");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
@@ -64,7 +66,7 @@ public class ApoMod
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
         // some example code to dispatch IMC to another mod
-        InterModComms.sendTo("examplemod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+        InterModComms.sendTo("apomod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
     }
 
     private void processIMC(final InterModProcessEvent event)
