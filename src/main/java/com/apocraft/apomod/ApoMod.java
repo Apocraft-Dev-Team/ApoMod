@@ -1,5 +1,7 @@
 package com.apocraft.apomod;
 
+import com.apocraft.apomod.block.ModBlocks;
+import com.apocraft.apomod.config.Config;
 import com.apocraft.apomod.item.ModItems;
 import com.apocraft.apomod.world.biome.ModBiomes;
 import com.apocraft.apomod.world.gen.ModBiomeGeneration;
@@ -10,13 +12,16 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,12 +38,20 @@ public class ApoMod
 
     public ApoMod() {
         // Register the setup method for modloading
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config);
+
+        Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("apomod-client.toml").toString());
+        Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("apomod-server.toml").toString());
+
+
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 
         ModItems.register(eventBus);
         ModBiomes.register(eventBus);
-
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading

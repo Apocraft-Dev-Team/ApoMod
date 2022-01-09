@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east": { "model": "apomod:block/sandbags_block", "y": 90 },
+    "facing=south": { "model": "apomod:block/sandbags_block", "y": 180 },
+    "facing=west": { "model": "apomod:block/sandbags_block", "y": 0 },
+    "facing=north": { "model": "apomod:block/sandbags_block", "y": 270 }
+  }
+}

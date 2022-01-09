@@ -1,4 +1,13 @@
 {
   "item.apomod.apocola": "Apo-Cola",
-  "biome.apomod.hellfire_biome": "Hellfire World"
+  "item.apomod.m16a4": "Assault Rifle M16A4",
+
+
+  "block.apomod.sandbags_block": "Sandbags",
+
+
+  "biome.apomod.hellfire_biome": "Hellfire World",
+
+
+  "itemGroup.apomod_tab": "Apomod"
 }
