@@ -1,80 +1,80 @@
 {
-	"credit": "Made by VELD for Apocraft",
+	"credit": "Made by VELD for ApoCraft (ApoMod)",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "apomod:block/sanbag",
-		"1": "apomod:block/sanbag_up",
-		"particle": "apomod:particle/sanbag"
+		"0": "resources/sanbag",
+		"1": "resources/sanbag_up",
+		"particle": "resources/sanbag"
 	},
 	"elements": [
 		{
 			"name": "bag1",
-			"from": [2, 0, 2],
-			"to": [7, 4, 10],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, 0, 0]},
+			"from": [-0.4525, 0, -0.67043],
+			"to": [7.5475, 4, 4.32957],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 2]},
 			"faces": {
-				"north": {"uv": [4, 4, 6.5, 6], "texture": "#0"},
-				"east": {"uv": [0, 4, 4, 6], "texture": "#0"},
-				"south": {"uv": [10.5, 4, 13, 6], "texture": "#0"},
-				"west": {"uv": [6.5, 4, 10.5, 6], "texture": "#0"},
-				"up": {"uv": [6.5, 4, 4, 0], "texture": "#0"},
-				"down": {"uv": [9, 0, 6.5, 4], "texture": "#0"}
+				"north": {"uv": [2.5, 4, 6.5, 6], "texture": "#0"},
+				"east": {"uv": [0, 4, 2.5, 6], "texture": "#0"},
+				"south": {"uv": [9, 4, 13, 6], "texture": "#0"},
+				"west": {"uv": [6.5, 4, 9, 6], "texture": "#0"},
+				"up": {"uv": [6.5, 4, 2.5, 1.5], "texture": "#0"},
+				"down": {"uv": [10.5, 1.5, 6.5, 4], "texture": "#0"}
 			}
 		},
 		{
 			"name": "bag2",
-			"from": [2, 8, 2],
-			"to": [7, 12, 10],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, 8, 0]},
+			"from": [-0.4525, 8, -0.67043],
+			"to": [7.5475, 12, 4.32957],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 2]},
 			"faces": {
-				"north": {"uv": [4, 4, 6.5, 6], "texture": "#0"},
-				"east": {"uv": [0, 4, 4, 6], "texture": "#0"},
-				"south": {"uv": [10.5, 4, 13, 6], "texture": "#0"},
-				"west": {"uv": [6.5, 4, 10.5, 6], "texture": "#0"},
-				"up": {"uv": [6.5, 4, 4, 0], "texture": "#0"},
-				"down": {"uv": [9, 0, 6.5, 4], "texture": "#0"}
+				"north": {"uv": [2.5, 4, 6.5, 6], "texture": "#0"},
+				"east": {"uv": [0, 4, 2.5, 6], "texture": "#0"},
+				"south": {"uv": [9, 4, 13, 6], "texture": "#0", "cullface": "north"},
+				"west": {"uv": [6.5, 4, 9, 6], "texture": "#0"},
+				"up": {"uv": [6.5, 4, 2.5, 1.5], "texture": "#0"},
+				"down": {"uv": [10.5, 1.5, 6.5, 4], "texture": "#0"}
 			}
 		},
 		{
 			"name": "bag3",
-			"from": [5, 4, 3],
-			"to": [10, 8, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3, 4, 1]},
+			"from": [3, 4, 0],
+			"to": [13, 8, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 2]},
 			"faces": {
-				"north": {"uv": [5, 5, 7.5, 7], "texture": "#1"},
-				"east": {"uv": [0, 5, 5, 7], "texture": "#1"},
-				"south": {"uv": [12.5, 5, 15, 7], "texture": "#1"},
-				"west": {"uv": [7.5, 5, 12.5, 7], "texture": "#1"},
-				"up": {"uv": [7.5, 5, 5, 0], "texture": "#1"},
-				"down": {"uv": [10, 0, 7.5, 5], "texture": "#1"}
+				"north": {"uv": [2.5, 5, 7.5, 7], "texture": "#1"},
+				"east": {"uv": [0, 5, 2.5, 7], "texture": "#1"},
+				"south": {"uv": [10, 5, 15, 7], "texture": "#1"},
+				"west": {"uv": [7.5, 5, 10, 7], "texture": "#1"},
+				"up": {"uv": [7.5, 5, 2.5, 2.5], "texture": "#1"},
+				"down": {"uv": [12.5, 2.5, 7.5, 5], "texture": "#1"}
 			}
 		},
 		{
 			"name": "bag2",
-			"from": [8, 0, 5],
-			"to": [13, 4, 13],
-			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 0]},
+			"from": [8.67043, 0, -0.5475],
+			"to": [16.67043, 4, 4.4525],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 2]},
 			"faces": {
-				"north": {"uv": [4, 4, 6.5, 6], "texture": "#0"},
-				"east": {"uv": [0, 4, 4, 6], "texture": "#0"},
-				"south": {"uv": [10.5, 4, 13, 6], "texture": "#0"},
-				"west": {"uv": [6.5, 4, 10.5, 6], "texture": "#0"},
-				"up": {"uv": [6.5, 4, 4, 0], "texture": "#0"},
-				"down": {"uv": [9, 0, 6.5, 4], "texture": "#0"}
+				"north": {"uv": [2.5, 4, 6.5, 6], "texture": "#0"},
+				"east": {"uv": [0, 4, 2.5, 6], "texture": "#0"},
+				"south": {"uv": [9, 4, 13, 6], "texture": "#0"},
+				"west": {"uv": [6.5, 4, 9, 6], "texture": "#0"},
+				"up": {"uv": [6.5, 4, 2.5, 1.5], "texture": "#0"},
+				"down": {"uv": [10.5, 1.5, 6.5, 4], "texture": "#0"}
 			}
 		},
 		{
 			"name": "bag3",
-			"from": [8, 8, 5],
-			"to": [13, 12, 13],
-			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 8, 0]},
+			"from": [8.67043, 8, -0.5475],
+			"to": [16.67043, 12, 4.4525],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 2]},
 			"faces": {
-				"north": {"uv": [4, 4, 6.5, 6], "texture": "#0"},
-				"east": {"uv": [0, 4, 4, 6], "texture": "#0"},
-				"south": {"uv": [10.5, 4, 13, 6], "texture": "#0"},
-				"west": {"uv": [6.5, 4, 10.5, 6], "texture": "#0"},
-				"up": {"uv": [6.5, 4, 4, 0], "texture": "#0"},
-				"down": {"uv": [9, 0, 6.5, 4], "texture": "#0"}
+				"north": {"uv": [2.5, 4, 6.5, 6], "texture": "#0"},
+				"east": {"uv": [0, 4, 2.5, 6], "texture": "#0"},
+				"south": {"uv": [9, 4, 13, 6], "texture": "#0"},
+				"west": {"uv": [6.5, 4, 9, 6], "texture": "#0"},
+				"up": {"uv": [6.5, 4, 2.5, 1.5], "texture": "#0"},
+				"down": {"uv": [10.5, 1.5, 6.5, 4], "texture": "#0"}
 			}
 		}
 	],

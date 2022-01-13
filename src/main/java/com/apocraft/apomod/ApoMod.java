@@ -7,6 +7,8 @@ import com.apocraft.apomod.world.biome.ModBiomes;
 import com.apocraft.apomod.world.gen.ModBiomeGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -81,6 +83,8 @@ public class ApoMod
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+
+        RenderTypeLookup.setRenderLayer(ModBlocks.SANDBAGS.get(), RenderType.translucent());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

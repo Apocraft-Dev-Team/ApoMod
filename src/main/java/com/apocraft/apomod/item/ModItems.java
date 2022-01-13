@@ -25,9 +25,28 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModItemGroup.APOMOD_TAB).rarity(Rarity.RARE))
     );
 
+
+    ///////////////////////////////////
+    //                               //
+    //       ARMES & MUNITIONS       //
+    //                               //
+    ///////////////////////////////////
+    /*
+        Merci de TOUJOURS mettre les munitions après les armes, cela facilite le référencement et permet de trier les Items.
+        Ne pas oublier que les armes ont des propriétés spéciales, merci de les rajouter à chaque fois qu'une arme est ajoutée.
+        Ne pas oublier de faire les recettes lors de la création d'un objet
+        Armes / Item:
+            - M16A4 = AMMO 9" MAGAZINE = 30x 9MM AMMO /// Propriétés non ajoutées.
+     */
+
     // M16A4 ITEM
     public static final RegistryObject<Item> AssaultRifleM16A4 = ITEMS.register("m16a4",
             () -> new Item(new Item.Properties().tab(ModItemGroup.APOMOD_TAB).rarity(Rarity.COMMON))
+    );
+
+    // MUNITION 9mm ITEM
+    public static final RegistryObject<Item> BULLET9MM = ITEMS.register("bullet9mm",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.APOMOD_TAB).rarity(Rarity.UNCOMMON))
     );
 
 }
