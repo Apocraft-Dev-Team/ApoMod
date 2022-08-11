@@ -14,7 +14,7 @@ import static net.minecraftforge.common.BiomeDictionary.Type.*;
 public class ModBiomeGeneration {
 
     public static void generateBiomes() {
-        addBiome(ModBiomes.HELLFIRE_BIOME.get(), BiomeManager.BiomeType.WARM, 20, HOT, DEAD, NETHER);
+        addBiome(ModBiomes.HELLFIRE_BIOME.get(), BiomeManager.BiomeType.DESERT, 20, HOT, DEAD, NETHER);
     }
 
     private static void addBiome(Biome biome, BiomeManager.BiomeType type, int weight, BiomeDictionary.Type... types) {

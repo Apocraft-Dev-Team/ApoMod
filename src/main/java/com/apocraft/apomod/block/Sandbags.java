@@ -29,7 +29,7 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-public class ModBlocks {
+public class Sandbags {
 
     // FUNCTIONS & REFS
 
